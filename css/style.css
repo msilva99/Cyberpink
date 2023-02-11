@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+body {
+   background-color: #110000;
+   height: 100vh;
+   overflow: hidden;
+}
+
+@font-face {
+   font-family: "Nokia";
+   src: url("../fonts/nokiafc22.eot");
+   src: url("../fonts/nokiafc22.eot") format("embedded-opentype"), url("../fonts/nokiafc22.woff") format("woff"), url("../fonts/nokiafc22.ttf") format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   font-family: "Nokia";
+   color: #FF1E96;
+}
+
+.pink {
+   color: #FF1E96;
+}
+
+.btn,.btn:focus,.btn:active {
+   font-family: "Nokia";
+   color: #FFECE0;
+   border: #FFECE0 solid 3px;
+   margin: 30px 0 40px;
+   position: absolute;
+   bottom: 10vh;
+}
+
+.btn:hover {
+   color: #FF1E96;
+   border: #FF1E96 solid 3px;
+}
+
+.hello {
+   width: 350px;
+   height: 200px;
+   background-color: white;
+   outline: #FFECE0 solid 2px;
+   border: #110000 solid 3px;
+   border-radius: 1px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.hello h1,h2,h3,h4,h5,h6 {
+   color: #20191b;
+}
+
+.hello-header {
+   position: absolute;
+   top: 0;
+   height: 32px;
+   width: 100%;
+   border-bottom: #110000 solid 3px;
+   display: flex;
+   padding-top: 2px;
+   padding-right: 3px;
+   justify-content: right;
+   background-color: #ff3da5;
+}
+
+.hello-close {
+   font-family: "Nokia";
+   color: #110000;
+   cursor: pointer;
+}
+
+a, a:active, a:focus, a:visited {
+   color: #FF1E96;
+}
+
+a:hover {
+   color: #FF5D96;
+}
+
+.idk {
+   position: absolute;
+   bottom: 30vh;
+}
+
+.heart-rating {
+   display: flex;
+   justify-content: space-evenly;
+   width: 320px;
+}
+
+.heart {
+   height: 60px;
+   width: 60px;
+}
+
+.heart-rating div.heart, .heart-rating div.heart:hover ~ div.heart {
+   background: url("../img/heart-empty.png") no-repeat;
+   transition-delay: 0;
+}
+
+.heart-rating:hover div.heart:nth-child(2) {
+   transition-delay: 30ms;
+}
+ 
+.heart-rating:hover div.heart:nth-child(3) {
+   transition-delay: 60ms;
+}
+ 
+.heart-rating:hover div.heart:nth-child(4) {
+   transition-delay: 90ms;
+}
+ 
+.heart-rating:hover div.heart:nth-child(5) {
+   transition-delay: 120ms;
+}
+
+.heart-rating:hover div.heart {
+   background: url("../img/heart-full.png") no-repeat;
+}
+
+.heart-rating div.heart {
+   cursor: pointer;
+}
